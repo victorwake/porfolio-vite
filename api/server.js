@@ -35,8 +35,8 @@ server.post('/contact', (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "victorhoffman@hotmail.com",
-      pass: "8819788Rammstein8819788",
+      user: {userMail},
+      pass: {password},
     },
   });
 
