@@ -1,0 +1,13 @@
+{
+    "nav": ["Inicio", "Acerca de mi", "Skills", "Trabajos", "Contacto"],
+    "home-p": "Algunas palabras que me describen: Intuición, curiosidad, investigación, perseverancia, paciencia, resolución de problemas, adaptabilidad a los cambios, liderazgo, buena predisposición a las sugerencias, comunicación. En este momento me encuentro capacitándome activamente en programación, realizando varios cursos/bootcamp y proyectos.",
+    "hello": "Hola, soy",
+    "soy": "Soy ",
+    "multi-texto": ["desarrollador Frontend", "", "desarrollador Backend" ],
+    "About-me": ["Acerca de ", " mi", "desarrollador Full Stack!"],
+    "btn-about": "Leer más"
+
+
+
+
+}
