@@ -35,8 +35,8 @@ server.post('/contact', (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: {userMail},
-      pass: {password},
+      user: userMail,
+      pass: password,
     },
   });
 
