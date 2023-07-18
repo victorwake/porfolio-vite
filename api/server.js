@@ -31,7 +31,7 @@ server.post('/contact', (req, res) => {
 
   // Configurar el transporte para enviar correos electrónicos con Nodemailer
   const transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
+    host: 'smtp-relay.brevo.com',
     port: 587,
     secure: false,
     auth: {
@@ -41,9 +41,9 @@ server.post('/contact', (req, res) => {
   });
 
   const mailOptions = {
-    from: 'victorhoffman@hotmail.com',
+    from: 'porfoliovictorpinto@gmail.com',
     to: 'victorpintowake@gmail.com',
-    subject: 'Nuevo mensaje de porfolio',
+    subject: 'Nuevo mensaje del porfolio',
     text: `
       Nombre: ${name}
       Email: ${email}
