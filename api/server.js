@@ -3,7 +3,15 @@ const server = express();
 const morgan = require('morgan');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-server.use(cors());
+
+const corsOptions = {
+    origin: '*', // Especifica el origen permitido
+    methods: ['GET', 'POST'], // Especifica los métodos permitidos
+    allowedHeaders: ['Content-Type'], // Especifica los encabezados permitidos
+};
+
+
+server.use(cors(corsOptions));
 require('dotenv').config();
 
 
