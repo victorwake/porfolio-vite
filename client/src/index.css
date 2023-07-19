@@ -538,6 +538,17 @@ section{
     cursor: pointer;
 }
 
+.alert-success{
+    font-size: 1.5rem;
+    color: #28a745;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    margin-bottom: 2rem;
+}
+
 /* fin contacto  */
 
 /* --------------------------------------------------------------------------------------------------- */

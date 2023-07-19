@@ -5,7 +5,15 @@
 "soy": "And I'm a ",
 "multi-texto": ["Frontend developer", "", "backend developer" ],
 "About-me": ["About",  " Me", "Full Stack Developer!" ],
-"btn-about": "Read more"
+"btn-about": "Read more",
+"alert-success": "Message sent successfully!",
+"send": "Send Message",
+"sending": "Sending...",
+"yourMessage": "Your message",
+"subject": "Subject",
+"mobileNumber": "Mobile number",
+"email": "Email",
+"name": "Name"
 
 
 }

@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Contacto() {
+  const [t, i18n] = useTranslation('global');//Traduccion
+  const [showModal, setShowModal] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -60,7 +64,7 @@ export default function Contacto() {
           <div className="input-box">
             <input
               type="text"
-              placeholder="Name"
+              placeholder={t('name')}
               name="name"
               required
               value={formData.name}
@@ -68,7 +72,7 @@ export default function Contacto() {
             />
             <input
               type="email"
-              placeholder="Email"
+              placeholder={t('email')}
               name="email"
               required
               value={formData.email}
@@ -78,7 +82,7 @@ export default function Contacto() {
           <div className="input-box">
             <input
               type="number"
-              placeholder="Mobile Number"
+              placeholder={t('mobileNumber')}
               name="mobileNumber"
               required
               value={formData.mobileNumber}
@@ -86,7 +90,7 @@ export default function Contacto() {
             />
             <input
               type="text"
-              placeholder="Subject"
+              placeholder={t('subject')}
               name="subject"
               required
               value={formData.subject}
@@ -99,17 +103,19 @@ export default function Contacto() {
             id=""
             cols="30"
             rows="10"
-            placeholder="Your Message"
+            placeholder={t('yourMessage')}
             required
             value={formData.message}
             onChange={handleChange}
           ></textarea>
           <button type="submit" className="btn" disabled={isSending}>
-            {isSending ? 'Enviando...' : 'Send Message'}
+            {isSending ? t('sending') : t('send')}
           </button>
-          {isSuccess && <p>El correo electrónico se envió con éxito.</p>}
+          {isSuccess && <p className="alert-success">{t('alert-success')}</p>}
         </form>
       </section>
     </>
   );
 }
+
+

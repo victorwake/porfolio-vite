@@ -5,7 +5,15 @@
     "soy": "Soy ",
     "multi-texto": ["desarrollador Frontend", "", "desarrollador Backend" ],
     "About-me": ["Acerca de ", " mi", "desarrollador Full Stack!"],
-    "btn-about": "Leer más"
+    "btn-about": "Leer más",
+    "alert-success": "Mensaje enviado con éxito!",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "yourMessage" : "Tu mensaje",
+    "subject": "Asunto",
+    "mobileNumber": "Número de teléfono",
+    "email": "Email",
+    "name": "Nombre"
 
 
 

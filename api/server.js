@@ -13,6 +13,8 @@ server.use(morgan('dev'));
 
 const userMail = process.env.USER_HOTMAIL;
 const password = process.env.PASS_HOTMAIL;
+const from = process.env.FROM;
+const to = process.env.TO;
 
 // Configurar ruta para recibir los datos del formulario
 server.post('/contact', (req, res) => {
@@ -35,8 +37,8 @@ server.post('/contact', (req, res) => {
   
 
   const mailOptions = {
-    from: 'victorhoffman@hotmail.com',
-    to: 'victorpintowake@gmail.com',
+    from: from,
+    to: to,
     subject: 'Nuevo mensaje del porfolio',
     text: `
       Nombre: ${name}
