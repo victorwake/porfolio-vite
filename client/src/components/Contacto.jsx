@@ -24,7 +24,7 @@ export default function Contacto() {
     setIsSending(true);
 
     try {
-      const response = await fetch('http://localhost:3001/contact', {
+      const response = await fetch('https://porfolio-service-email.onrender.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
