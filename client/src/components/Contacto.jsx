@@ -24,13 +24,14 @@ export default function Contacto() {
     setIsSending(true);
 
     try {
-      const response = await fetch('https://soft-stardust-56245b.netlify.app/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
+      const response = await fetch('http://localhost:3001/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+      body: JSON.stringify(formData)
+});
+
 
       if (response.ok) {
         setIsSuccess(true);

@@ -4,14 +4,7 @@ const morgan = require('morgan');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
-const corsOptions = {
-    origin: '*', // Especifica el origen permitido
-    methods: ['GET', 'POST'], // Especifica los métodos permitidos
-    allowedHeaders: ['Content-Type'], // Especifica los encabezados permitidos
-};
-
-
-server.use(cors(corsOptions));
+server.use(cors());
 require('dotenv').config();
 
 
@@ -39,9 +32,10 @@ server.post('/contact', (req, res) => {
       pass: password,
     },
   });
+  
 
   const mailOptions = {
-    from: 'porfoliovictorpinto@gmail.com',
+    from: 'victorhoffman@hotmail.com',
     to: 'victorpintowake@gmail.com',
     subject: 'Nuevo mensaje del porfolio',
     text: `
