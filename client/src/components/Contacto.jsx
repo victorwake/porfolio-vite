@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 export default function Contacto() {
   const [t, i18n] = useTranslation('global');//Traduccion
   const [showModal, setShowModal] = useState(false);
+  const urlBackend = import.meta.env.VITE_BACKEND_URL;
 
   const [formData, setFormData] = useState({
     name: '',
@@ -28,7 +29,7 @@ export default function Contacto() {
     setIsSending(true);
 
     try {
-      const response = await fetch('https://porfolio-service-email.onrender.com/contact', {
+      const response = await fetch(urlBackend, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
