@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function Contacto() {
-  const [t, i18n] = useTranslation('global');//Traduccion
+  const [t, i18n] = useTranslation('global');
   const [showModal, setShowModal] = useState(false);
   const urlBackend = import.meta.env.VITE_BACKEND_URL;
 
@@ -15,6 +15,11 @@ export default function Contacto() {
   });
   const [isSending, setIsSending] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  // Mensaje de estado para controlar la visibilidad del mensaje de éxito
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+   // Mensaje de estado para controlar la visibilidad del mensaje de error
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -30,13 +35,12 @@ export default function Contacto() {
 
     try {
       const response = await fetch(urlBackend, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-      body: JSON.stringify(formData)
-});
-
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
 
       if (response.ok) {
         setIsSuccess(true);
@@ -47,8 +51,23 @@ export default function Contacto() {
           subject: '',
           message: ''
         });
+
+        // Mostrar el mensaje de éxito
+        setShowSuccessMessage(true);
+
+        // Después de 3 segundos, ocultar el mensaje de éxito
+        setTimeout(() => {
+          setShowSuccessMessage(false);
+        }, 3000);
       } else {
         console.error('Error al enviar el correo electrónico');
+          // Mostrar el mensaje de error
+          setShowErrorMessage(true);
+
+          // Después de 3 segundos, ocultar el mensaje de error
+        setTimeout(() => {
+          setShowErrorMessage(false);
+        }, 3000);
       }
     } catch (error) {
       console.error('Error al enviar la solicitud:', error);
@@ -112,7 +131,10 @@ export default function Contacto() {
           <button type="submit" className="btn" disabled={isSending}>
             {isSending ? t('sending') : t('send')}
           </button>
-          {isSuccess && <p className="alert-success">{t('alert-success')}</p>}
+          {/* Mostrar el mensaje de éxito si showSuccessMessage es true */}
+          {showSuccessMessage && <p className="alert-success">{t('alert-success')}</p>}
+           {/* Mostrar el mensaje de error si showErrorMessage es true */}
+            {showErrorMessage && <p className="alert-error">Error en el envío</p>}
         </form>
       </section>
     </>
