@@ -59,7 +59,7 @@ export default function Contacto() {
   return (
     <>
       <section className="contacto" id="contacto">
-        <h2 className="heading">Contact <span>Me!</span></h2>
+        <h2 className="heading">{t('contact')}<span>{t('me')}</span></h2>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
             <input

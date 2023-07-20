@@ -78,7 +78,7 @@ export default function Home() {
             href="https://github.com/victorwake/porfolio/raw/main/client/src/image/CV-VictorPinto-2023.pdf"
             className="btn"
           >
-            Download CV
+            {t('download')}
           </a>
         </div>
         <div className="home-img">

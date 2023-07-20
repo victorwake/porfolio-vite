@@ -6,6 +6,9 @@
     "multi-texto": ["desarrollador Frontend", "", "desarrollador Backend" ],
     "About-me": ["Acerca de ", " mi", "desarrollador Full Stack!"],
     "btn-about": "Leer más",
+    "download" : "Descargar CV",
+    "contact": "Contáctame",
+    "me": "",
     "alert-success": "Mensaje enviado con éxito!",
     "send": "Enviar mensaje",
     "sending": "Enviando...",
@@ -13,7 +16,8 @@
     "subject": "Asunto",
     "mobileNumber": "Número de teléfono",
     "email": "Email",
-    "name": "Nombre"
+    "name": "Nombre",
+    "reserved": "Todos los derechos reservados"
 
 
 
