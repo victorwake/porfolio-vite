@@ -17,7 +17,16 @@
 "mobileNumber": "Mobile number",
 "email": "Email",
 "name": "Name",
-"reserved" : "All rights reserved."
+"reserved" : "All rights reserved.",
+"about-experience":["I built a robust Java backend connected to a MySQL database using Spring Boot. I gained skills in comprehensive web development by incorporating Thymeleaf for frontend creation. I employed user authentication and query optimization.", "I built a robust backend in Node.js with connectivity to a PostgreSQL database using Express. I expanded my skills by creating a dynamic frontend in React with Redux, and furthermore, I implemented advanced features such as user authentication and MercadoLibre payment processing. I learned to manage cloud storage for images."],
+"experience": "Experience",
+"Educación": "Education",
+"university": ["Guillermo Brown National University: ", "Programming Technician. (February 2022 - In progress)"],
+"soyHenry": "Full Stack Developer, JavaScript, React, Redux, Node, Postgresql, (August 2022 - February 2023)",
+"egg": "Full Stack Developer, JAVA, MySql, JDBC/JPA, GIT, MVC - (July 2021 - May 2022).",
+"utn": "May 2021 - November 2021",
+"videoGame": "Individual project for the course I am Henry, video game site that consumes an external API and saves games in a db.",
+"todo": "Allows adding and deleting tasks and changing the theme."
 
 
 }

@@ -33,19 +33,45 @@ export default function About() {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-header">
-              <h2>Título del pop-up</h2>
+              <h2></h2>
               <button className="close-btn" onClick={handleCloseModal}>
                 X
               </button>
             </div>
             <div className="modal-content">
-              <p>Contenido detallado del pop-up.Contenido detallado del pop-up.
-              Contenido detallado del pop-up.
-              Contenido detallado del pop-up.
-              Contenido detallado del pop-up.Contenido detallado del pop-up.
-              Contenido detallado del pop-up.
-              Contenido detallado del pop-up.Contenido detallado del pop-up.
-              </p>
+              <div className="modal-body">
+              <h2 className="modal-title">{t('education')}</h2>
+              <div className="modal-card">
+                <p>
+                  <span className="span-about">{t('university.0')} </span>
+                  {t('university.1')}
+                </p>
+              </div>
+
+              <div className="modal-card">
+                <p><span className="span-about">Soy Henry: </span> 
+                {t('soyHenry')}</p>
+                </div>
+
+                <div className="modal-card">
+                <p><span className="span-about">Egg: </span>
+                  {t('egg')}</p>
+                </div>
+
+                <div className="modal-card">
+                  <p><span className="span-about">Centro de e-Learning UTN FRBA:  </span>
+                    professional webmaster   · {t('utn')}</p>
+                </div>
+                <h2 className="modal-title">{t('experience')}</h2>
+                <div className="modal-card">
+                  <p><span className="span-about">Egg:  </span>
+                  {t('about-experience.0')}</p>
+                </div>
+                <div className="modal-card">
+                  <p><span className="span-about">Soy Henry:  </span>
+                  {t('about-experience.1')}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

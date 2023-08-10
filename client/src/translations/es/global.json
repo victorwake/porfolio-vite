@@ -17,7 +17,16 @@
     "mobileNumber": "Número de teléfono",
     "email": "Email",
     "name": "Nombre",
-    "reserved": "Todos los derechos reservados"
+    "reserved": "Todos los derechos reservados",
+    "about-experience":["Construí un sólido backend en Java, conectado a una base de datos MySQL utilizando Spring Boot. Adquirí habilidades en el desarrollo web integral al incorporar Thymeleaf para la creación del frontend. Empleé autenticación de usuarios y optimización de consultas.", "Construí un sólido backend en Node.js con conectividad a una base de datos PostgreSQL a través de Express. Amplié mis habilidades al crear un frontend dinámico en React con Redux, y además implementé características avanzadas como autenticación de usuarios y procesamiento de pagos de MercadoLibre. Aprendí a gestionar el almacenamiento en la nube para imágenes."],
+    "experience": "Experiencia",
+    "education": "Educación",
+    "university": ["Universidad Nacional Guillermo Brown: ", "Tecnicatura en programación. (febrero de 2022 - En curso)"],
+    "soyHenry": "Programador Full Stack, JavaScript, React, Redux, Node, Postgresql, (agosto de 2022 - febrero de 2023)",
+    "egg": " Programador Full Stack, JAVA, MySql, JDBC/JPA, GIT, MVC · (julio de2021 - mayo de 2022)",
+    "utn": "(mayo de 2021 - noviembre de 2021)",
+    "videoGame": "Proyecto individual para el curso Soy Henry, página de videos juegos que consume una API externa y guarda juegos en una db.",
+    "todo": "Permite agregar y eliminar tareas y el cambio de tema."
 
 
 

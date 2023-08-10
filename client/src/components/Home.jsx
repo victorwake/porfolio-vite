@@ -38,17 +38,17 @@ export default function Home() {
             </h3>
           </div>
           <p className="home-p">
-          {t('home-p')}
+          {/* {t('home-p')} */}
           </p>
           <div className="social-media">
-            <a
+            {/* <a
               href="https://www.facebook.com/Victorpintowake"
               target="_blank"
               rel="noreferrer"
               style={{ "--i": 6 }}
             >
               <i className="bx bxl-facebook"></i>
-            </a>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/victor-pinto-fullstack/"
               target="_blank"
@@ -65,14 +65,14 @@ export default function Home() {
             >
               <i className="bx bxl-github"></i>
             </a>
-            <a
+            {/* <a
               href="https://www.instagram.com/victorwake/"
               target="_blank"
               rel="noreferrer"
               style={{ "--i": 9 }}
             >
               <i className="bx bxl-instagram-alt"></i>
-            </a>
+            </a> */}
           </div>
           <a
             href="https://github.com/victorwake/porfolio/raw/main/client/src/image/CV-VictorPinto-2023.pdf"

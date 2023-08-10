@@ -1,8 +1,10 @@
 import game from '../img/game.png';
 import todo from '../img/todo.gif';
 import wines from '../img/wines.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Portfolio() {
+    const [t, i18n] = useTranslation('global');//Traduccion
     return (
         <>
         <section className="porfolio" id="porfolio">
@@ -12,7 +14,7 @@ export default function Portfolio() {
                 <img src={game} alt=""></img>
                 <div className="porfolio-layer">
                     <h4>Web Games</h4>
-                    <p>Proyecto individual para el curso Soy Henry, página de videos juegos que consume una API externa y guarda juegos en una db.</p>
+                    <p>{t('videoGame')} </p>
                 <a href="https://pi-videogames-pza6s3qw0-victorwake.vercel.app/" target="_blank"><i className='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -21,7 +23,7 @@ export default function Portfolio() {
                 <img src={todo} alt=""></img>
                 <div className="porfolio-layer">
                     <h4>Web Todo</h4>
-                    <p>Permite agregar y eliminar tareas y el cambio de tema.</p>
+                    <p>{t('todo')} </p>
                 <a href="https://victorpinto-todo.netlify.app/" target="_blank"><i className='bx bx-link-external'></i></a>
                 </div>
             </div>
