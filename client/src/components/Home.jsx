@@ -75,7 +75,7 @@ export default function Home() {
             </a> */}
           </div>
           <a
-            href="https://github.com/victorwake/porfolio/raw/main/client/src/image/CV-VictorPinto-2023.pdf"
+            href="https://raw.githubusercontent.com/victorwake/porfolio-vite/main/client/src/assets/VictorPintoCv-11-08.pdf"
             className="btn"
           >
             {t('download')}
