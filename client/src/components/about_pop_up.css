@@ -1,7 +1,7 @@
 
 .modal-overlay {
     position: fixed;
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -75,5 +75,23 @@
 @media (max-width: 768px){
   .modal-card{
     width: 95%;
+  }
+}
+
+@media (max-width: 617px){
+  .modal-overlay {
+    top: 70px;
+  }
+}
+
+@media (max-width: 450px){
+  .modal-overlay {
+    top: 50px;
+  }
+}
+
+@media (max-width: 365px){
+  .modal-overlay {
+    top: 50px;
   }
 }
