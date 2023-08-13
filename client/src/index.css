@@ -724,7 +724,7 @@ section{
     }
 
     #floatingDiv{
-        right: 30%;
+        right: 20%;
         top: 2rem;
         transform: translateX(-70%);
     }
