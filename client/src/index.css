@@ -739,6 +739,11 @@ section{
         grid-template-columns: 1fr;
         margin: 5%;
     }
+    /* .multi-texto h3,
+    .multi-texto span {
+        font-size: 1.5em;
+    display: inline;
+    } */
 }
 
 @media (max-width: 450px){

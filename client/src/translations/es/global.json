@@ -25,7 +25,7 @@
     "soyHenry": "Programador Full Stack, JavaScript, React, Redux, Node, Postgresql, (agosto de 2022 - febrero de 2023)",
     "egg": " Programador Full Stack, JAVA, MySql, JDBC/JPA, GIT, MVC · (julio de2021 - mayo de 2022)",
     "utn": "(mayo de 2021 - noviembre de 2021)",
-    "videoGame": "Proyecto individual para el curso Soy Henry, página de videos juegos que consume una API externa y guarda juegos en una db.",
+    "videoGame": "Proyecto individual para Soy Henry, consume una API y guarda juegos en una db.",
     "todo": "Permite agregar y eliminar tareas y el cambio de tema.",
     "webWines": "Proyecto grupal para Soy Henry, consume una API, pasarela de pagos y guarda vinos en una db."
 
