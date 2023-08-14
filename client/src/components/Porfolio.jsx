@@ -33,7 +33,7 @@ export default function Portfolio() {
                 <div className="porfolio-layer">
                     <h4>Web Wines</h4>
                     <p>{t('webWines')}</p>
-                <a href="#"><i className='bx bx-link-external'></i></a>
+                <a href="https://pg-wine.vercel.app/" target="_blank"><i className='bx bx-link-external'></i></a>
                 </div>
             </div>
 
