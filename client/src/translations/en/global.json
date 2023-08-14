@@ -26,7 +26,8 @@
 "egg": "Full Stack Developer, JAVA, MySql, JDBC/JPA, GIT, MVC - (July 2021 - May 2022).",
 "utn": "May 2021 - November 2021",
 "videoGame": "Individual project for the course I am Henry, video game site that consumes an external API and saves games in a db.",
-"todo": "Allows adding and deleting tasks and changing the theme."
+"todo": "Allows adding and deleting tasks and changing the theme.",
+"webWines": "Group project for Soy Henry, consumes an API, payment gateway, and stores wines in a database."
 
 
 }

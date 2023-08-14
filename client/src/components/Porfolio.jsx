@@ -32,7 +32,7 @@ export default function Portfolio() {
                 <img src={wines} alt=""></img>
                 <div className="porfolio-layer">
                     <h4>Web Wines</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi.</p>
+                    <p>{t('webWines')}</p>
                 <a href="#"><i className='bx bx-link-external'></i></a>
                 </div>
             </div>

@@ -446,7 +446,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0, .1), var(--main-color-cel));
+    background: rgba(95, 158, 160, 0.753);
     display: flex;
     justify-content: center;
     align-items: center;
